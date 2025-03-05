@@ -17,4 +17,11 @@ class CalculatorDemoApplicationTests {
         assert(result == 3);
     }
 
+    @Test
+    public void testSubtract() {
+        CalculatorController controller = new CalculatorController();
+        double result = controller.subtract(2, 1);
+        assert(result == 3);
+    }
+
 }
