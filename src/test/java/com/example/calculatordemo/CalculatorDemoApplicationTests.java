@@ -10,4 +10,11 @@ class CalculatorDemoApplicationTests {
     void contextLoads() {
     }
 
+    @Test
+    public void testAdd() {
+        CalculatorController controller = new CalculatorController();
+        double result = controller.add(1, 2);
+        assert(result == 3);
+    }
+
 }
